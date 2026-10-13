@@ -1,3 +1,29 @@
+/*
+*  This program is free software: you can redistribute it and/or modify
+*  it under the terms of the GNU General Public License as published by
+*  the Free Software Foundation, either version 3 of the License, or
+*  (at your option) any later version.
+*
+*  This program is distributed in the hope that it will be useful,
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*  GNU General Public License for more details.
+*
+*  You should have received a copy of the GNU General Public License
+*  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/********************************************************************
+* Description: A simple translucent terminal emulator.
+* Author: jcartwright <jcartwright-System-Version>
+* Created at: Wed Oct 14 09:17:07 AEDT 2026
+* Computer: jcartwright-System-Version
+* System: Linux 6.8.0-138-generic on x86_64
+*
+* Copyright (c) 2026 jcartwright.  All rights reserved.
+*
+********************************************************************/
+
 #include "term.h"
 #include "pty_mgr.h"
 #include "x11_ui.h"
@@ -56,7 +82,7 @@ int main(int argc, char *argv[]) {
     int cols = DEFAULT_COLS;
     int rows = DEFAULT_ROWS;
     const char *font_name = NULL;
-    uint8_t opacity = 204; /* ~80% opacity */
+    uint8_t opacity = 244; /* ~80% opacity */
     const char *theme_name = "eterm-classic";
     const char *title = "Eterm";
     bool bevel = true;
